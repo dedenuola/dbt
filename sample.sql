@@ -1,0 +1,1 @@
+select * from `dbt-dede.jaffle_shop.customer`
