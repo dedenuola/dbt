@@ -5,4 +5,4 @@ select id as customer_id,
     --amount stored as cents to be converted to dollars
     amount/100 as amount,
     created as created_at
-from `dbt-dede.stripe.payments`
+from {{source("stripe","payments")}}
