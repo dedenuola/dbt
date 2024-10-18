@@ -4,21 +4,28 @@ sources:
   - name: jaffle_shop
     database: dbt-dede
     schema: jaffle_shop
+    description: "Source tables from the Jaffle Shop, a clone of the BigQuery database, containing raw, untransformed customer and order data."
     tables:
       - name: customers
+        description: "Raw table containing customer details, including unique identifiers and related information."
         columns:
-            - name: id
-              tests:
-                - unique
-                - not_null
+          - name: id
+            description: "Unique identifier for each customer."
+            tests:
+              - unique
+              - not_null
       - name: orders
+        description: "Raw table containing order details, including unique identifiers and customer references."
         columns:
-            - name: id
-              tests:
-                - unique
-                - not_null
-      - name: customer_id
-        tests:
-          - relationships:
-                to: ref('customers')
-                field: customer_id
+          - name: id
+            description: "Unique identifier for each order."
+            tests:
+              - unique
+              - not_null
+          - name: customer_id
+            description: "Reference to the unique identifier of the customer who placed the order."
+            tests:
+              - relationships:
+                  to: ref('customers')
+                  field: id
+
