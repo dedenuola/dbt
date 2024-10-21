@@ -8,7 +8,7 @@ Welcome to my DBT BigQuery Project. In this initiative, I will showcase my abili
 DBT (data build tool) is a command-line tool that enables data analysts and engineers to transform data in their warehouse more effectively. By building models and executing transformations directly in a SQL-based environment, DBT allows for enhanced data accessibility and analysis.
 
 In this project, I focus on creating models related to customer data and order transactions. The end goal is to facilitate data quality assurance, improve accessibility, and create a robust framework for ongoing data analysis. This project highlights the potential of DBT to manage transformations efficiently while ensuring data integrity through various testing methodologies.
-![dbt-dag](https://github.com/user-attachments/assets/2b4218bb-22c9-4d60-9679-d6d0d8f65180)
+![dbt-dag (1)](https://github.com/user-attachments/assets/65a4e5b2-af7f-4f39-8bc8-9b2d0b44810e)
 
 ### Architecture & Technologies
 This architectural framework ensures a streamlined, automated, and scalable approach to handling data, from its extraction to transformation and analysis.
