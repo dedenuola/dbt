@@ -40,4 +40,6 @@ models:
           - relationships:
               to: ref('stg_customers')
               field: customer_id
+  - name: stg_stripe_payments
+    description: this model identifies customer orders, amount and status of transaction.
               
